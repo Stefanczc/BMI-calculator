@@ -11,7 +11,7 @@ function bmi() { // functie care calculeaza BMI
     const heightValue = parseFloat(height.value) / 100; // valoarea introdusa de user in campul de inaltime
 
 
-    if (isNaN(weightValue) || isNaN(heightValue)) {
+    if (isNaN(weightValue) || isNaN(heightValue) || weightValue < 0 || heightValue < 0) {
         answer.innerText = ' Please enter valid data for Weight & Height.';
         answer.style.color = 'red';
         answer.style.fontWeight = 'bold';
